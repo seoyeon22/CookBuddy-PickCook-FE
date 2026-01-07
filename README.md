@@ -4,26 +4,12 @@
 <div align="center">
   <img src="images/pickcook_logo.png" alt="pickcook logo" height="400" align="center" />
 </div>
-<h3 align="center">5팀 - Team CookBuddy </h3><br>
-
-## 🕵️ 팀원 소개
-
-<div align="center">
-
-| <img src="https://img3.daumcdn.net/thumb/R658x0.q70/?fname=http://t1.daumcdn.net/news/201707/25/seouleconomy/20170725083653488jtol.jpg" width="100" height="100"/> | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gEFr3b-5mhcz5mp8GNK41xQauma4MPL5nA&s" width="100" height="100"/> | <img src="https://i.namu.wiki/i/TQwZWqyeyNKMffr3p9A3Bxah_MmOR8das_6Pqr0zNfCWwQG-VjX4XyzdDSDtoW2MPcBnzFEhTVY1Ebm7lECvaw.webp" width="100" height="100"/> | <img src="https://i.namu.wiki/i/QJLpVKc_VfakfHP5IqhTMdGbflc4XkVSl-ggNZ4UElDl60JaMwyVrxw_ihyX12TRrurYDUxm5IbTqYqvVEruVg.webp" width="100" height="100"/> | <img src="https://i.pinimg.com/474x/71/c2/11/71c211b8f46513e77c33c2979e105436.jpg" width="100" height="100"/> |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                                                   🐰 **김아영**<br/>[@thay123028](https://github.com/thay123028)                                                   |                                    🧶 **김영재**<br/>[@young1042](https://github.com/young1042)                                    |                                           ⚽ **허정빈**<br/>[@jeongbin5211](https://github.com/jeongbin5211)                                            |                                              🤪 **허정우**<br/>[@JohnHeo81](https://github.com/JohnHeo81)                                               |                         🐢 **홍서연**<br/>[@seoyeon22](https://github.com/seoyeon22)                          |
-
-</div>
 <br><br>
 
 ## 📌 프로젝트 소개
 
-PickCook은 1인 가구와 같이 소량의 식재료를 다양하게 활용해야 하는 현대인의 라이프스타일에 맞춰 개발된 스마트 요리 플랫폼입니다.
-
-요즘 외식 물가가 상승하면서 집에서 직접 요리하는 사람들이 늘고 있습니다. 하지만 소량으로 식재료를 구매하기 어렵고, 한 번 산 재료를 다 먹지 못해 버리는 경우가 많습니다.
-PickCook은 이러한 문제를 해결하기 위해 탄생했습니다.
-
+PickCook은 사용자의 냉장고 재료를 기반으로 레시피를 추천하고,
+레시피에 필요한 식재료 구매까지 이어지도록 주문·결제 흐름을 설계한 웹 서비스입니다.
 <br/>
 
 ## 🥕 주요 기능
@@ -48,57 +34,75 @@ PickCook은 이러한 문제를 해결하기 위해 탄생했습니다.
 다른 유저들과 요리 팁을 나누고, 추천 레시피도 공유해보세요.
 PickCook은 단순한 도구를 넘어서, 함께 요리하는 즐거움을 제공합니다.
 
-<br />
-
-## 🎯 왜 PickCook인가?
-
-1인 가구, 바쁜 직장인, 냉장고에 뭐가 있는지 자꾸 잊어버리는 사람들…
-누구든 PickCook과 함께라면 재료 낭비 없이 똑똑하게 요리할 수 있습니다.
-
-<blockquote> 
-"있는 재료로 더 맛있게, 더 알뜰하게!" <br/>
-이것이 PickCook의 철학입니다.
-</blockquote>
-
 <br/>
 
 ## 🔗 접속 주소
 
-[https://pick-cook.kro.kr:8443](https://pick-cook.kro.kr:8443)
+[https://pick-cook.kro.kr](https://pick-cook.kro.kr:8443)
 
 <br/>
 
-## 🛠️ 기술 스택
+## 🚀 주요 구현 내용
 
-### 프론트엔드
+### 커뮤니티 글 작성 – Presigned URL 기반 이미지 업로드 구현
 
-![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![pinia](https://img.shields.io/badge/Pinia-ffd859?style=for-the-badge&logoColor=black) ![NginX](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+> 대용량 이미지 업로드 시 서버 부하를 줄이고, 작성 중 즉시 미리보기를 제공하기 위해 Presigned URL 방식을 도입
 
-### 협업 & 기타
+- 커뮤니티 글 작성 시 이미지를 서버를 거치지 않고 S3에 직접 업로드하도록 Presigned URL 방식을 적용
 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![AWS EC2](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=FFFFFF)
-![Figma](https://img.shields.io/badge/figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Notion](https://img.shields.io/badge/notion-000000.svg?style=for-the-badge&logo=notion&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-5865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+- 이미지 업로드 흐름
+
+  1. 클라이언트에서 이미지 파일 선택
+  2. 백엔드로 Presigned URL 요청
+  3. 발급받은 URL로 S3에 직접 PUT 업로드
+  4. 업로드된 이미지 URL을 Quill 에디터에 즉시 삽입
+
+- Quill Editor의 기본 이미지 핸들러를 오버라이드하여,에디터 작성 중 실시간 이미지 미리보기 UX 제공
+- 게시글 저장 시, 본문(content)과 함께 업로드된 이미지 URL 목록을 별도로 관리하여 게시글–이미지 관계를 명확히 분리
+- 서버 부하 감소 및 대용량 파일 처리에 유리한 구조로 설계
+
+### 한글 입력 특성을 고려한 검색 UX 개선
+
+> 한글 입력 방식의 특성을 고려하여, 사용자가 불완전하게 입력해도 원하는 결과를 찾을 수 있도록 검색 UX를 개선
+
+- 한글을 초성 / 중성 / 종성 단위로 분해하여 사용자 입력에 유연하게 반응하는 검색 로직 구현
+- 초성만 입력해도 연속 초성이 일치하는 재료를 검색 가능 (예: ㅇ, ㅇㅌ → 이탈리안 피자)
+- 단어의 중간 초성 또는 일부 음절만 입력해도 부분 일치 검색 지원 (예: ㅌ, 타, 탈)
+- 종성이 포함된 입력의 경우, 종성을 다음 초성으로 이동시키는 보정 로직을 적용하여 검색 정확도 향상 (예: 이탈ㄹㅇ → 이탈리안 피자)
+- 검색어를 실시간으로 반영하여 필터링된 결과를 즉시 표시하고, 검색 결과 개수를 함께 제공하여 UX 개선
+- 단순 문자열 비교가 아닌 한글 유니코드 계산 기반의 커스텀 검색 알고리즘을 직접 구현
+
+### Axios Interceptor 기반 API 통신 구조
+
+> 인증·에러 처리 로직을 중앙에서 관리하여 API 변경에 유연한 구조를 구성
+
+- axios instance와 interceptor를 분리해 API 통신 레이어를 구성
+- Authorization 헤더, 공통 에러 처리 로직을 interceptor에서 관리
+- 인증 실패(401) 시 사용자 흐름을 고려한 예외 처리 구조 설계
+- API 변경 시 화면 코드 수정 없이 interceptor 레벨에서 대응 가능
+
+<br/>
+
+## 🛠️ Frontend 기술 스택
+
+![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![pinia](https://img.shields.io/badge/Pinia-ffd859?style=for-the-badge&logoColor=black) ![Figma](https://img.shields.io/badge/figma-F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 <br>
 
-## 🖼️ Figma 설계
+## 🖼️ 와이어프레임 설계
 
 [Figma 링크](https://www.figma.com/design/I8x27F4wnRhe4leKxO4DhB/CookBuddy?node-id=496-3051&t=0JszSvbobDRSVmg3-1)
 
-### 📄 페이지 설계
-
-### 🧩 컴포넌트 설계
-
 <br/>
 
-## 아키텍쳐 설계
+## 🧩 배포 구조
 
-<img src="images/pickcook_system_architecture.png" alt="system architecture" align="center" />
+- S3: 프론트 정적 파일 호스팅
+- CloudFront: CDN 및 HTTPS 처리
+- EC2: Backend API 서버
+
+👉 전체 시스템 아키텍처는
+[Backend Repository](https://github.com/seoyeon22/CookBuddy-PickCook-BE)에서 확인할 수 있습니다.
 
 <br/>
 
