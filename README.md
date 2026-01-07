@@ -64,7 +64,7 @@ PickCook은 단순한 도구를 넘어서, 함께 요리하는 즐거움을 제�
 
 ## 🔗 접속 주소
 
-[https://www.pickcook.kro.kr/](https://www.pickcook.kro.kr/)
+[https://pick-cook.kro.kr:8443](https://pick-cook.kro.kr:8443)
 
 <br/>
 
